@@ -18,18 +18,6 @@ The Bridge Pattern separates the abstraction from its implementation, allowing b
 * **Concrete Implementors:** `TraditionalCooking`, `ModernCooking`
 * **Client:** `Main`
 
-```text
-CheremshaDish
-    |
-    +-- CheremshaSalad
-    +-- CheremshaSoup
-    |
-    +---- MainCooking
-              |
-              +-- TraditionalCooking
-              +-- ModernCooking
-```
-
 `CheremshaDish` contains a reference to `MainCooking`. This reference is the bridge between the abstraction and implementation.
 
 ## 3. Runtime Switching
